@@ -1,0 +1,195 @@
+/* ==========================
+   CONFIGURACIÓN GENERAL
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color:#f4f4f4;
+    color:#333;
+    line-height:1.6;
+}
+
+/* ==========================
+   HEADER
+========================== */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background-color:#0f3d5e;
+}
+
+/* ==========================
+   LOGO
+========================== */
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo img{
+    width:80px;
+    border-radius:50%;
+}
+
+.texto h1{
+    color:white;
+    font-size:36px;
+}
+
+.texto h2{
+    color:#d6d6d6;
+    font-size:18px;
+    font-weight:normal;
+}
+
+/* ==========================
+   MENÚ
+========================== */
+
+nav ul{
+    display:flex;
+    gap:30px;
+    list-style:none;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#ffd54f;
+}
+
+/* ==========================
+   MAIN
+========================== */
+
+main{
+    display:flex;
+    flex-direction:column;
+    gap:50px;
+    max-width:1200px;
+    margin:auto;
+    padding:50px 30px;
+}
+
+/* ==========================
+   SECCIONES
+========================== */
+
+section{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+section h2{
+    margin-bottom:20px;
+    color:#0f3d5e;
+}
+
+/* ==========================
+   LISTA SERVICIOS
+========================== */
+
+#servicios ul{
+    padding-left:20px;
+}
+
+#servicios li{
+    margin-bottom:10px;
+}
+
+/* ==========================
+   TABLA
+========================== */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th,
+td{
+    border:1px solid #ccc;
+    padding:12px;
+    text-align:center;
+}
+
+th{
+    background:#0f3d5e;
+    color:white;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer{
+    background:#0f3d5e;
+    color:white;
+    text-align:center;
+    padding:20px;
+
+}
+/* ==========================
+   DISEÑO RESPONSIVE
+========================== */
+
+@media (max-width: 768px) {
+
+    header{
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .logo{
+        justify-content: center;
+    }
+
+    nav{
+        width: 100%;
+    }
+
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    main{
+        padding: 30px 20px;
+    }
+
+    .logo img{
+        width: 70px;
+    }
+
+    .texto{
+        text-align: center;
+    }
+
+    .texto h1{
+        font-size: 28px;
+    }
+
+    .texto h2{
+        font-size: 16px;
+    }
+}
