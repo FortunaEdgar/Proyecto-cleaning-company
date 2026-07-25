@@ -1,17 +1,13 @@
 
 services:
 
-  servidor-web:
-    build: .
-    container_name:  servidor-web
-    ports:
-      - "8080:80"
-
   nginx:
     image: nginx:alpine
     container_name: servidor-nginx
     ports:
       - "8081:80"
+    volumes:
+      - ./:/usr/share/nginx/html
 
   mysql:
     image: mysql:8.0
